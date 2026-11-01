@@ -24,7 +24,7 @@ const Contact = () => {
       .then(() => {
         toast.success(
           <div>
-            <strong className="block text-lg mb-1">Message sent</strong>
+            <strong className="toast">Message sent</strong>
             <span>Thank you for reaching out. I’ll get back to you soon.</span>
           </div>,
         );
@@ -33,7 +33,7 @@ const Contact = () => {
       .catch(() => {
         toast.error(
           <div>
-            <strong className="block text-lg mb-1">Message not sent</strong>
+            <strong className="toast">Message not sent</strong>
             <span>Something went wrong. Please try again in a moment.</span>
           </div>,
         );
